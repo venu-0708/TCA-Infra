@@ -1,0 +1,6 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#f0f0f0"/>
+  <text x="400" y="300" font-family="Arial" font-size="30" text-anchor="middle" fill="#888888">Image Placeholder</text>
+  <rect x="200" y="350" width="400" height="50" rx="10" fill="#dddddd"/>
+  <text x="400" y="385" font-family="Arial" font-size="24" text-anchor="middle" fill="#888888">TCA-Infra Construction</text>
+</svg>
