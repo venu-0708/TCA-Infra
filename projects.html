@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects - TCA-Infra Construction</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-bold">TCA-Infra</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="hover:text-yellow-300">Home</a>
+                    <a href="about.html" class="hover:text-yellow-300">About Us</a>
+                    <a href="services.html" class="hover:text-yellow-300">Services</a>
+                    <a href="projects.html" class="hover:text-yellow-300 font-medium">Projects</a>
+                    <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-700 pb-4">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-600">Home</a>
+            <a href="about.html" class="block py-2 px-4 text-sm hover:bg-gray-600">About Us</a>
+            <a href="services.html" class="block py-2 px-4 text-sm hover:bg-gray-600">Services</a>
+            <a href="projects.html" class="block py-2 px-4 text-sm hover:bg-gray-600">Projects</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-gray-600">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-gray-800 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4">Our Projects</h1>
+            <p class="text-xl max-w-3xl mx-auto">Explore our portfolio of exceptional construction projects that showcase our expertise, quality, and innovation.</p>
+        </div>
+    </section>
+
+    <!-- Projects Navigation -->
+    <section class="bg-white py-6 sticky top-0 z-20 shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center space-x-2 md:space-x-6">
+                <a href="#completed" class="px-4 py-2 text-gray-700 hover:text-yellow-500 font-medium">Completed Projects</a>
+                <a href="#ongoing" class="px-4 py-2 text-gray-700 hover:text-yellow-500 font-medium">Ongoing Projects</a>
+                <a href="#upcoming" class="px-4 py-2 text-gray-700 hover:text-yellow-500 font-medium">Upcoming Projects</a>
+                <a href="#testimonials" class="px-4 py-2 text-gray-700 hover:text-yellow-500 font-medium">Client Testimonials</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Completed Projects -->
+    <section id="completed" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Completed Projects</h2>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
+                <p class="max-w-3xl mx-auto text-gray-600">A showcase of our successfully completed construction projects across various sectors.</p>
+            </div>
+            
+            <!-- Project Filters -->
+            <div class="flex flex-wrap justify-center mb-12">
+                <button class="project-filter active m-2 px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition duration-300" data-filter="all">All</button>
+                <button class="project-filter m-2 px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition duration-300" data-filter="residential">Residential</button>
+                <button class="project-filter m-2 px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition duration-300" data-filter="commercial">Commercial</button>
+                <button class="project-filter m-2 px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition duration-300" data-filter="renovation">Renovation</button>
+                <button class="project-filter m-2 px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition duration-300" data-filter="industrial">Industrial</button>
+            </div>
+            
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-item bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-category="residential">
+                    <div class="relative overflow-hidden">
+                        <img src="images/project-1.jpg" alt="Luxury Residence" class="w-full h-64 object-cover transition duration-500 transform hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-yellow-500 text-white text-sm font-bold px-3 py-1 rounded-full">Residential</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Oceanview Luxury Residence</h3>
+                        <p class="text-gray-600 mb-4">A stunning 6,500 sq ft custom luxury home with panoramic ocean views, featuring 5 bedrooms, 6 bathrooms, and state-of-the-art smart home technology.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-500">Completed: Jan 2023</span>
+                            <button class="view-project-details text-yellow-500 hover:text-yellow-600 font-medium inline-flex items-center" data-project="project1">
+                                View Details
+                                <svg class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-item bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-category="commercial">
+                    <div class="relative overflow-hidden">
+                        <img src="images/project-2.jpg" alt="Office Building" class="w-full h-64 object-cover transition duration-500 transform hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-yellow-500 text-white text-sm font-bold px-3 py-1 rounded-full">Commercial</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Skyline Office Tower</h3>
+                        <p class="text-gray-600 mb-4">A modern 12-story office building with 150,000 sq ft of premium office space, featuring a green roof, energy-efficient systems, and collaborative workspaces.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-500">Completed: Nov 2022</span>
+                            <button class="view-project-details text-yellow-500 hover:text-yellow-600 font-medium inline-flex items-center" data-project="project2">
+                                View Details
+                                <svg class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-item bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-category="renovation">
+                    <div class="relative overflow-hidden">
+                        <img src="images/project-3.jpg" alt="Historic Renovation" class="w-full h-64 object-cover transition duration-500 transform hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-yellow-500 text-white text-sm font-bold px-3 py-1 rounded-full">Renovation</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Heritage Building Restoration</h3>
+                        <p class="text-gray-600 mb-4">Complete restoration of a 120-year-old historic building, preserving original architectural elements while modernizing interior systems and spaces.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-500">Completed: Aug 2022</span>
+                            <button class="view-project-details text-yellow-500 hover:text-yellow-600 font-medium inline-flex items-center" data-project="project3">
+                                View Details
+                                <svg class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-item bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-category="industrial">
+                    <div class="relative overflow-hidden">
+                        <img src="images/project-4.jpg" alt="Manufacturing Facility" class="w-full h-64 object-cover transition duration-500 transform hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-yellow-500 text-white text-sm font-bold px-3 py-1 rounded-full">Industrial</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">TechPro Manufacturing Facility</h3>
+                        <p class="text-gray-600 mb-4">A 75,000 sq ft state-of-the-art manufacturing facility with advanced automation systems, sustainable design features, and employee wellness areas.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-500">Completed: May 2022</span>
+                            <button class="view-project-details text-yellow-500 hover:text-yellow-600 font-medium inline-flex items-center" data-project="project4">
+                                View Details
+                                <svg class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-item bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-category="residential">
+                    <div class="relative overflow-hidden">
+                        <img src="images/project-5.jpg" alt="Apartment Complex" class="w-full h-64 object-cover transition duration-500 transform hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-yellow-500 text-white text-sm font-bold px-3 py-1 rounded-full">Residential</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Urban Living Apartments</h3>
+                        <p class="text-gray-600 mb-4">A modern apartment complex with 120 units, featuring community spaces, fitness center, rooftop garden, and energy-efficient design.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-500">Completed: Mar 2022</span>
+                            <button class="view-project-details text-yellow-500 hover:text-yellow-600 font-medium inline-flex items-center" data-project="project5">
+                                View Details
+                                <svg class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-item bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-category="commercial">
+                    <div class="relative overflow-hidden">
+                        <img src="images/project-6.jpg" alt="Shopping Center" class="w-full h-64 object-cover transition duration-500 transform hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-yellow-500 text-white text-sm font-bold px-3 py-1 rounded-full">Commercial</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Riverside Shopping Center</h3>
+                        <p class="text-gray-600 mb-4">A 200,000 sq ft retail development with 45 stores, restaurants, and entertainment venues, featuring outdoor plazas and sustainable design elements.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-500">Completed: Jan 2022</span>
+                            <button class="view-project-details text-yellow-500 hover:text-yellow-600 font-medium inline-flex items-center" data-project="project6">
+                                View Details
+                                <svg class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300">View All Completed Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ongoing Projects -->
+    <section id="ongoing" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Ongoing Projects</h2>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
+                <p class="max-w-3xl mx-auto text-gray-600">Current projects under construction, showcasing our active work and progress.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Ongoing Project 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="relative">
+                        <img src="images/ongoing-1.jpg" alt="Luxury Hotel" class="w-full h-64 object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-white font-medium">Progress: 75%</span>
+                                <span class="bg-green-500 text-white text-xs px-2 py-1 rounded">On Schedule</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Grand Plaza Hotel & Resort</h3>
+                        <p class="text-gray-600 mb-4">A luxury 5-star hotel with 250 rooms, conference facilities, multiple restaurants, spa, and infinity pool overlooking the city skyline.</p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold mb-2">Project Timeline:</h4>
+                            <div class="bg-gray-200 rounded-full h-2.5 mb-1">
+                                <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 75%"></div>
+                            </div>
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span>Start: Jun 2022</span>
+                                <span>Expected Completion: Dec 2023</span>
+                            </div>
+                        </div>
+                        <a href="#" class="text-yellow-500 hover:text-yellow-600 font-medium inline-flex items-center">
+                            Project Details
+                            <svg class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Ongoing Project 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="relative">
+                        <img src="images/ongoing-2.jpg" alt="Corporate Headquarters" class="w-full h-64 object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-white font-medium">Progress: 60%</span>
+                                <span class="bg-green-500 text-white text-xs px-2 py-1 rounded">On Schedule</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">NextGen Corporate Headquarters</h3>
+                        <p class="text-gray-600 mb-4">A cutting-edge corporate campus with 300,000 sq ft of office space, featuring sustainable design, collaborative workspaces, and employee amenities.</p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold mb-2">Project Timeline:</h4>
+                            <div class="bg-gray-200 rounded-full h-2.5 mb-1">
+                                <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 60%"></div>
+                            </div>
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span>Start: Sep 2022</span>
+                                <span>Expected Completion: Mar 2024</span>
+                            </div>
+                        </div>
+                        <a href="#" class="text-yellow-500 hover:text-yellow-600 font-medium inline-flex items-center">
+                            Project Details
+                            <svg class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Ongoing Project 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="relative">
+                        <img src="images/ongoing-3.jpg" alt="Residential Community" class="w-full h-64 object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-white font-medium">Progress: 40%</span>
+                                <span class="bg-yellow-500 text-white text-xs px-2 py-1 rounded">Slight Delay</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Parkview Residential Community</h3>
+                        <p class="text-gray-600 mb-4">A master-planned residential community with 150 homes, community center, parks, and recreational facilities in a prime suburban location.</p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold mb-2">Project Timeline:</h4>
+                            <div class="bg-gray-200 rounded-full h-2.5 mb-1">
+                                <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 40%"></div>
+                            </div>
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span>Start: Nov 2022</span>
+                                <span>Expected Completion: Jul 2024</span>
+                            </div>
+                        </div>
+                        <a href="#" class="text-yellow-500 hover:text-yellow-600 font-medium inline-flex items-center">
+                            Project Details
+                            <svg class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Projects -->
+    <section id="upcoming" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Upcoming Projects</h2>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
+                <p class="max-w-3xl mx-auto text-gray-600">A preview of our future construction projects that are currently in the planning and design phases.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Upcoming Project 1 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col md:flex-row">
+                    <div class="md:w-2/5">
+                        <img src="images/upcoming-1.jpg" alt="Mixed-Use Development" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-3/5 p-6">
+                        <div class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded mb-2">Coming Soon</div>
+                        <h3 class="text-xl font-bold mb-2">Riverfront Mixed-Use Development</h3>
+                        <p class="text-gray-600 mb-4">A vibrant mixed-use development featuring residential units, retail spaces, offices, and public plazas along the riverfront.</p>
+                        <div class="mb-4">
+                            <div class="flex items-center text-sm text-gray-500 mb-1">
+                                <svg class="h-5 w-5 mr-1 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                </svg>
+                                <span>Projected Start: Q1 2024</span>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <svg class="h-5 w-5 mr-1 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                                <span>Location: Downtown Riverside</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-gray-500 text-sm mr-4">Current Status:</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Design Phase</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Upcoming Project 2 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col md:flex-row">
+                    <div class="md:w-2/5">
+                        <img src="images/upcoming-2.jpg" alt="Healthcare Facility" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-3/5 p-6">
+                        <div class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded mb-2">Coming Soon</div>
+                        <h3 class="text-xl font-bold mb-2">Wellness Medical Center</h3>
+                        <p class="text-gray-600 mb-4">A state-of-the-art medical facility with specialized treatment centers, outpatient services, and healing-focused design elements.</p>
+                        <div class="mb-4">
+                            <div class="flex items-center text-sm text-gray-500 mb-1">
+                                <svg class="h-5 w-5 mr-1 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                </svg>
+                                <span>Projected Start: Q2 2024</span>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <svg class="h-5 w-5 mr-1 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                                <span>Location: North Medical District</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-gray-500 text-sm mr-4">Current Status:</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">Planning Phase</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Upcoming Project 3 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col md:flex-row">
+                    <div class="md:w-2/5">
+                        <img src="images/upcoming-3.jpg" alt="Eco-Friendly Community" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-3/5 p-6">
+                        <div class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded mb-2">Coming Soon</div>
+                        <h3 class="text-xl font-bold mb-2">GreenVista Eco-Community</h3>
+                        <p class="text-gray-600 mb-4">A sustainable residential community with net-zero energy homes, community gardens, renewable energy systems, and eco-friendly infrastructure.</p>
+                        <div class="mb-4">
+                            <div class="flex items-center text-sm text-gray-500 mb-1">
+                                <svg class="h-5 w-5 mr-1 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                </svg>
+                                <span>Projected Start: Q3 2024</span>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <svg class="h-5 w-5 mr-1 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                                <span>Location: Westside Valley</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-gray-500 text-sm mr-4">Current Status:</span>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded">Concept Development</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Upcoming Project 4 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col md:flex-row">
+                    <div class="md:w-2/5">
+                        <img src="images/upcoming-4.jpg" alt="Educational Campus" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-3/5 p-6">
+                        <div class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded mb-2">Coming Soon</div>
+                        <h3 class="text-xl font-bold mb-2">Innovation Learning Center</h3>
+                        <p class="text-gray-600 mb-4">A modern educational campus with flexible learning spaces, advanced technology infrastructure, and collaborative environments for next-generation education.</p>
+                        <div class="mb-4">
+                            <div class="flex items-center text-sm text-gray-500 mb-1">
+                                <svg class="h-5 w-5 mr-1 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                </svg>
+                                <span>Projected Start: Q1 2025</span>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <svg class="h-5 w-5 mr-1 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                                <span>Location: East Education District</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-gray-500 text-sm mr-4">Current Status:</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-2.5 py-0.5 rounded">Initial Planning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section id="testimonials" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Client Testimonials</h2>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
+                <p class="max-w-3xl mx-auto text-gray-600">Hear what our clients have to say about their experience working with TCA-Infra.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-lg shadow-lg p-8 relative">
+                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-yellow-500 rounded-full w-10 h-10 flex items-center justify-center">
+                        <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"TCA-Infra exceeded our expectations in every way. Their attention to detail, commitment to quality, and transparent communication made our dream home a reality. We couldn't be happier with the results."</p>
+                    <div class="flex items-center">
+                        <img src="images/testimonial-1.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Michael & Sarah Thompson</h4>
+                            <p class="text-gray-500 text-sm">Residential Client</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-lg shadow-lg p-8 relative">
+                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-yellow-500 rounded-full w-10 h-10 flex items-center justify-center">
+                        <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"As a commercial developer, I've worked with many construction firms, but TCA-Infra stands out for their professionalism, efficiency, and problem-solving abilities. They delivered our office complex on time and within budget."</p>
+                    <div class="flex items-center">
+                        <img src="images/testimonial-2.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Robert Williams</h4>
+                            <p class="text-gray-500 text-sm">CEO, Williams Enterprises</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-lg shadow-lg p-8 relative">
+                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-yellow-500 rounded-full w-10 h-10 flex items-center justify-center">
+                        <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"The renovation of our historic building was a complex project that required specialized expertise. BuildCraft's team demonstrated exceptional craftsmanship and respect for the building's heritage while modernizing its functionality."</p>
+                    <div class="flex items-center">
+                        <img src="images/testimonial-3.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Jennifer Martinez</h4>
+                            <p class="text-gray-500 text-sm">Director, Heritage Foundation</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="bg-white rounded-lg shadow-lg p-8 relative">
+                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-yellow-500 rounded-full w-10 h-10 flex items-center justify-center">
+                        <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"BuildCraft transformed our outdated manufacturing facility into a state-of-the-art production center. Their understanding of industrial requirements and attention to operational efficiency has significantly improved our productivity."</p>
+                    <div class="flex items-center">
+                        <img src="images/testimonial-4.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">David Chen</h4>
+                            <p class="text-gray-500 text-sm">Operations Director, TechPro Manufacturing</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 5 -->
+                <div class="bg-white rounded-lg shadow-lg p-8 relative">
+                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-yellow-500 rounded-full w-10 h-10 flex items-center justify-center">
+                        <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"Working with BuildCraft on our multi-family housing development was a seamless experience. Their team's expertise in residential construction and ability to manage complex projects made them the perfect partner for our investment."</p>
+                    <div class="flex items-center">
+                        <img src="images/testimonial-5.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Amanda Johnson</h4>
+                            <p class="text-gray-500 text-sm">Real Estate Developer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 6 -->
+                <div class="bg-white rounded-lg shadow-lg p-8 relative">
+                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-yellow-500 rounded-full w-10 h-10 flex items-center justify-center">
+                        <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"The kitchen renovation BuildCraft completed for us has completely transformed our home. Their designers understood our vision, and their craftsmen executed it flawlessly. We appreciate their attention to detail and quality workmanship."</p>
+                    <div class="flex items-center">
+                        <img src="images/testimonial-6.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">James & Lisa Rodriguez</h4>
+                            <p class="text-gray-500 text-sm">Renovation Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-yellow-500">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Ready to Start Your Construction Project?</h2>
+            <p class="text-xl text-gray-800 mb-8 max-w-3xl mx-auto">Contact us today for a free consultation and quote. Let's bring your vision to life!</p>
+            <a href="contact.html" class="bg-gray-900 hover:bg-gray-800 text-white font-bold py-3 px-8 rounded-lg transition duration-300 inline-block">Contact Us Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">BuildCraft</h3>
+                    <p class="mb-4">Building excellence since 1995. Your trusted partner for all construction needs.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-yellow-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-yellow-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-yellow-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-yellow-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+                        <li><a href="about.html" class="hover:text-yellow-300">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-yellow-300">Services</a></li>
+                        <li><a href="projects.html" class="hover:text-yellow-300">Projects</a></li>
+                        <li><a href="contact.html" class="hover:text-yellow-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#residential" class="hover:text-yellow-300">Residential Projects</a></li>
+                        <li><a href="services.html#commercial" class="hover:text-yellow-300">Commercial Buildings</a></li>
+                        <li><a href="services.html#renovation" class="hover:text-yellow-300">Renovation & Interiors</a></li>
+                        <li><a href="services.html#turnkey" class="hover:text-yellow-300">Turnkey Projects</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <span>123 Construction Ave, Building City, 45678</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <span>info@tca-infra.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Mon-Fri: 8AM - 6PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2023 TCA-Infra. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Details Modal (Hidden by default) -->
+    <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg max-w-4xl w-full max-h-screen overflow-y-auto">
+            <div class="relative">
+                <button id="close-modal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+                <div id="modal-content" class="p-6">
+                    <!-- Modal content will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+    <!-- Projects JavaScript -->
+    <script src="js/projects.js"></script>
+</body>
+</html>
